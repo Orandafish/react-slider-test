@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  background-color: rgb(20, 20, 20);
+  overflow-x: hidden !important;
+}
+
+.home2-container {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  animation: textAnim 0.5s ease 0s 1 normal forwards;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(0%, -50%);
+  user-select: none;
+  /* -- Prevent image highlighting -- */
+  transition: all 0.4s;
+}
+
+#image-track>.image {
+  width: 40vmin;
+  height: 70vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  transition: all 0.4s;
+}
+
+.image:hover {
+  scale: 1.1;
+  transition: all 0.4s;
+}
+
+.image2 {
+  width: 22vmin;
+  height: 13vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+.darken-image {
+  filter: brightness(80%);
+}
+
+.image3 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.centered {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transition: all 0.4s;
+  animation: textAnim 0.4s ease 0s 1 normal forwards;
+}
+
+.frontImage {
+  position: relative;
+  transition: all 0.4s;
+}
+
+.frontImage a {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 160px;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+  animation: textAnim 0.5s ease 0s 1 normal forwards;
+  font-style: normal;
+  transition: all 0.4s;
+}
+
+.frontImage p {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: black;
+  z-index: 100;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  animation: textAnim 0.5s ease 0s 1 normal forwards;
+  background-color: white;
+  color: black;
+  mix-blend-mode: screen;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  transition: all 0.4s;
+
+}
+
+.frontImage p:hover {
+  scale: 1.1;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.nav-first {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45px;
+  background-color: rgb(25, 25, 25);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav a {
+  color: rgb(179, 176, 176);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fullpic {
+  text-align: center;
+  padding: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 340;
+  font-style: normal;
+  animation: textAnim 0.5s ease 0s 1 normal forwards;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 55px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: -150px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(97, 62, 15);
+  padding: 10px;
+}
+
+.text-container {
+  margin: 20px;
+  text-align: left;
+  max-width: 600px;
+  color: rgb(168, 167, 167);
+}
+
+.text-container h2 {
+  margin-top: 0;
+  color: white;
+}
+
+.discover-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.welcome-section {
+  margin: 40px;
+  color: white;
+}
+
+.welcome-section h2 {
+  font-size: 2em;
+  color: white
+}
+
+.welcome-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgb(168, 167, 167);
+}
+
+.aboutus-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 340;
+  font-style: normal;
+  color: white;
+  width: 60%;
+  gap: 1rem;
+  animation: textAnim 0.5s ease 0s 1 normal forwards;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: rgb(39, 39, 39);
+  border-radius: 25px;
+  padding: 10px;
+  width: 50%;
+  border: 2px solid rgb(73, 73, 73);
+
+
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.card-main-container h1{
+  font-size: 40px;
+}
+.card p {
+  color: rgb(168, 167, 167);
+}
+
+.aboutus-container p {
+  color: rgb(168, 167, 167);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(97, 97, 97, 0.527);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 16px;
+}
+
+.contactus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 340;
+  font-style: normal;
+  flex-direction: column;
+  height: 80vh;
+  animation: textAnim 0.5s ease 0s 1 normal forwards;
+}
+.container-aligner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactus-header {}
+
+@keyframes textAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
